@@ -6,7 +6,7 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "flow": "flow",
-    "lint": "eslint src",
+    "lint": "eslint",
     "precommit": "lint-staged"
   },
   "lint-staged": {
