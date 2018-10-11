@@ -6,9 +6,17 @@
  * @flow
  */
 
-import React, { PureComponent } from 'react'
+import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
+const App = () => (
+  <View style={styles.container}>
+    <Text style={styles.welcome}>Welcome to React Native!</Text>
+    <Text style={styles.instructions}>To get started, edit App.js</Text>
+  </View>
+)
+
+export default App
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -27,18 +35,3 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 })
-type Props = {}
-function multiplication(num1: number, num2: number) {
-  return num1 * num2
-}
-export default class App extends PureComponent<Props> {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        {multiplication(12, 25)}
-      </View>
-    )
-  }
-}
